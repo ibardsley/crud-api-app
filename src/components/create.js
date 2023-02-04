@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 import axios from 'axios';
 import { useHistory } from 'react-router';
-import Read from './read'
 
 export default function Create() {
     let history = useHistory();

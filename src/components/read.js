@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Table, Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import { buildQueries } from '@testing-library/react';
 
 export default function Read() {
     const [APIData, setAPIData] = useState([]);
@@ -38,7 +39,7 @@ export default function Read() {
 
     return (
         <div>
-            <Table singleLine>
+            <Table singleLine color={'grey'} key={'grey'} inverted>
                 <Table.Header>
                     <Table.Row>
                         <Table.HeaderCell>Website</Table.HeaderCell>
