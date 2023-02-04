@@ -39,7 +39,7 @@ export default function Read() {
 
     return (
         <div>
-            <Table singleLine color={'grey'} key={'grey'} inverted>
+            <Table singleline color={'grey'} key={'grey'} inverted>
                 <Table.Header>
                     <Table.Row>
                         <Table.HeaderCell>Website</Table.HeaderCell>

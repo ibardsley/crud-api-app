@@ -15,8 +15,8 @@ export default function Update() {
     useEffect(() => {
         setID(localStorage.getItem('ID'))
         setWebsite(localStorage.getItem('Website'));
-        setUserName(localStorage.getItem('First Name'));
-        setPassword(localStorage.getItem('Last Name'));
+        setUserName(localStorage.getItem('User Name'));
+        setPassword(localStorage.getItem('Password'));
         setCheckbox(localStorage.getItem('Checkbox Value'));
     }, []);
 
@@ -39,11 +39,11 @@ export default function Update() {
                 </Form.Field>
                 <Form.Field>
                     <label>User Name</label>
-                    <input placeholder='First Name' value={userName} onChange={(e) => setUserName(e.target.value)}/>
+                    <input placeholder='User Name' value={userName} onChange={(e) => setUserName(e.target.value)}/>
                 </Form.Field>
                 <Form.Field>
                     <label>Password</label>
-                    <input placeholder='Last Name' value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <input placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </Form.Field>
                 <Form.Field>
                     <Checkbox label='I agree to save my password' checked={checkbox} onChange={() => setCheckbox(!checkbox)}/>
